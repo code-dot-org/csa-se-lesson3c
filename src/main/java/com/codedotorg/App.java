@@ -9,6 +9,7 @@ public class App extends Application {
     }
 
     public void start(Stage primaryStage) {
+        
         PetApp virtualPet = new PetApp("Fido", "Dog");
         virtualPet.startApp(primaryStage);
 
