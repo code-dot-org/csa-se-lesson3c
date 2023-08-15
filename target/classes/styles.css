@@ -1,0 +1,28 @@
+/* Main layout styling */
+.vbox {
+    background-color: #f2f2f2;
+    spacing: 15px;   /* space between child nodes in VBox */
+    padding: 20px;   /* space between edges of VBox and its child nodes */
+}
+
+/* Button styling */
+.button {
+    background-color: #a8dadc;
+    border-radius: 10px;
+    padding: 10px 20px;
+    font-size: 16px;
+    text-fill: #1d3557;
+    cursor: hand;
+}
+
+.button:hover {
+    background-color: #457b9d;
+    text-fill: #f1faee;
+}
+
+/* Label styling */
+.label {
+    font-size: 18px;
+    font-weight: bold;
+    text-fill: #1d3557;
+}
