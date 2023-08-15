@@ -1,28 +1,51 @@
-/* Main layout styling */
-.vbox {
-    background-color: #f2f2f2;
-    spacing: 15px;   /* space between child nodes in VBox */
-    padding: 20px;   /* space between edges of VBox and its child nodes */
+/* General styling */
+.root {
+    -fx-font-family: 'Arial', sans-serif;
+    -fx-background-color: #f2f2f2;
 }
 
-/* Button styling */
+.vbox {
+    -fx-background-color: #fff;
+    -fx-border-radius: 10px;
+    -fx-border-color: #ccc;
+    -fx-border-width: 1px;
+    -fx-effect: dropshadow(three-pass-box, rgba(0, 0, 0, 0.1), 5, 0, 0, 0);
+    -fx-spacing: 10px;
+    -fx-padding: 10px;
+}
+
+/* Label styles */
+.label {
+    -fx-font-weight: bold;
+    -fx-font-size: 15px;
+    -fx-text-fill: #333;
+    -fx-spacing: 10px;
+    -fx-padding: 10px;
+}
+
+#titleLabel {
+    -fx-font-size: 30px;
+    -fx-text-fill: #009EB0;
+    -fx-font-weight: bold;
+}
+
+/* Button styles */
 .button {
-    background-color: #a8dadc;
-    border-radius: 10px;
-    padding: 10px 20px;
-    font-size: 16px;
-    text-fill: #1d3557;
-    cursor: hand;
+    -fx-font-weight: bold;
+    -fx-background-color: #009EB0;
+    -fx-text-fill: #fff;
+    -fx-border-radius: 3px;
+    -fx-padding: 8px 15px;
+    -fx-font-size: 14px;
+    -fx-cursor: hand;
+    -fx-spacing: 10px;
+    -fx-padding: 10px;
 }
 
 .button:hover {
-    background-color: #457b9d;
-    text-fill: #f1faee;
+    -fx-background-color: #2980b9;
 }
 
-/* Label styling */
-.label {
-    font-size: 18px;
-    font-weight: bold;
-    text-fill: #1d3557;
+.button:pressed {
+    -fx-background-color: #2c3e50;
 }

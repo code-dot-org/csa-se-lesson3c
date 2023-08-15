@@ -4,6 +4,7 @@ import javafx.scene.Node;
 import javafx.scene.Scene;
 import javafx.scene.control.Button;
 import javafx.scene.control.Label;
+import javafx.scene.layout.HBox;
 import javafx.scene.layout.VBox;
 import javafx.stage.Stage;
 
@@ -11,6 +12,7 @@ import java.util.List;
 
 import javafx.animation.KeyFrame;
 import javafx.animation.Timeline;
+import javafx.geometry.Pos;
 import javafx.util.Duration;
 
 public class PetApp {
@@ -57,6 +59,7 @@ public class PetApp {
         
         pet = new Pet(name, happyImagePrefix, sadImagePrefix);
         petInfoLabel = new Label(pet.toString());
+        petInfoLabel.setId("titleLabel");
     }
     
     /**
@@ -83,12 +86,29 @@ public class PetApp {
      * @return the VBox layout containing the pet information label, pet image view, feed button and play button.
      */
     public VBox createMainLayout() {
-        VBox tempLayout = new VBox();
+        VBox tempLayout = new VBox(20);
+        tempLayout.setAlignment(Pos.CENTER);
+
+        HBox buttonLayout = createButtonLayout();
+
+        tempLayout.getChildren().addAll(petInfoLabel, pet.getPetImageView(), buttonLayout);
+
+        return tempLayout;
+    }
+
+    /**
+     * Creates a horizontal layout containing two buttons: a feed button and a play button.
+     * 
+     * @return the HBox layout containing the buttons
+     */
+    public HBox createButtonLayout() {
+        HBox tempLayout = new HBox(10);
+        tempLayout.setAlignment(Pos.CENTER);
 
         Button feedButton = createFeedButton();
         Button playButton = createPlayButton();
 
-        tempLayout.getChildren().addAll(petInfoLabel, pet.getPetImageView(), feedButton, playButton);
+        tempLayout.getChildren().addAll(feedButton, playButton);
 
         return tempLayout;
     }
