@@ -8,6 +8,11 @@ But what we want is to let the user choose the type of pet they want and give it
 
 ![choosing a type of pet](assets/lesson3c-02.png)
 
+Before implementing the logic for your app:
+
+1. Take a moment to review the README to understand the code that is provided and tasks that need to be completed.
+2. Decide with your partner which tasks each of you will complete on your individual branches. As you work, remember to commit your code after completing a task!
+
 ## Step 1: Understanding the Code
 
 Before we start modifying this code, we should first make sure we understand what it currently does. Take a moment to read through the code. For any parts that you're unsure of, highlight the code and right-click, then choose **Copilot > Explain This**.
@@ -35,7 +40,7 @@ Write your prompt here!
 > &nbsp;
 > **Tip!**
 >
-> Try starting your prompt with `"Modify PetSelectionScene.java to"` followed by the steps that need to be added to this method.
+> Try starting your prompt with `"Modify createPetSelectionLayout() method to"` followed by the steps that need to be added to this method.
 > &nbsp;
 
 ## Step 4: Evaluating the Code
@@ -62,7 +67,22 @@ So the code it gave makes sense . . . now what?? Well, let's add it to our progr
 
 ✅ **Do This:** Update the `PetSelectionScene` class with the code that needs to be added to implement the desired functionality.
 
-Run the app (`App.java`)! Test choosing a dog and giving it a name, then test choosing a cat and giving it a name. Did it work? Why or why not?
+**Partner A & Partner B:** After implementing your solution, submit a pull request to merge your branches to the main branch. Partner A should then review Partner B's pull request, while Partner B should then review Partner A's pull request.
+
+1. **Partner B:** Navigate to the repo on GitHub and go to the Pull requests tab. Click the New pull request button to start a pull request.
+2. **Partner B:** Provide a title and brief description, and select Partner A as the reviewer.
+3. **Partner A:** Navigate to the repo on GitHub and go to the Pull requests tab. Click the New pull request button to start a pull request to merge your branch to main.
+4. **Partner A:** Provide a title and brief description, and select Partner B as the reviewer.
+
+### Reviewing the PR
+
+1. Go to the **Pull Requests** tab and select your partner's pull request from the list.
+2. Click the **Files Changed** tab and go through the changes line by line. For each change, you can click on the line number to add a comment about the line.
+3. When you're done reviewing, write a summary comment to give overall feedback about the changes.
+   * If changes are needed, be sure to specify what changes your partner needs to make and select **Request changes** to send it back for updates.
+   * If everything looks good, select **Approve**. On the **Conversation** tab, click the green button to merge the pull request. Click the **Delete branch** button after the merge is complete.
+
+Switch to the `main` branch after merging both branches, and test the app (run `App.java`)! Test choosing a dog and giving it a name, then test choosing a cat and giving it a name. Did it work? Why or why not?
 
 Write your response here!
 
